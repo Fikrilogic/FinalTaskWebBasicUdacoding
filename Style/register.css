@@ -1,0 +1,175 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  line-height: 1.6em;
+  font-family: "Teko", sans-serif;
+}
+
+.page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/res/zoo-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  position: absolute;
+  width: 90%;
+  height: 550px;
+  background-color: #fff;
+  left: 60px;
+  top: 60px;
+  border-radius: 10%;
+}
+
+.nav-logo {
+  margin-left: 50px;
+  margin-top: 30px;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 50px;
+}
+
+.nav-logo a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+
+.nav-logo h1 {
+  font-size: 35px;
+  color: #32ba01;
+}
+.nav-logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.register-container {
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.register-desc {
+  flex: 1 50%;
+  margin-right: 10px;
+  padding-top: 30px;
+}
+
+.register-desc h1 {
+  font-size: 40px;
+  text-align: justify;
+  margin-left: 15%;
+  margin-bottom: 30px;
+}
+
+.register-desc p {
+  margin-left: 15%;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.register-form {
+  width: 50%;
+  height: auto;
+  flex: 1;
+  margin-right: 50px;
+  background-color: #a0e866;
+  padding: 20px 15px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+form {
+  width: 100%;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.name .form-name,
+form input {
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  font-size: 15px;
+  color: #fff;
+}
+
+.form-name:first-child {
+  margin-right: 20px;
+  width: 150px;
+  border-radius: 5px;
+}
+
+.form-name:last-child {
+  width: 150px;
+  border-radius: 5px;
+}
+.register-form button {
+  margin-top: 20px;
+  width: 80%;
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.register-form button:hover {
+  background-color: lightblue;
+}
+
+/*responsive layout*/
+
+@media only screen and (max-width: 750px) {
+  .container {
+    height: auto;
+  }
+  .register-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .register-desc {
+    flex: 1;
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 50px;
+  }
+
+  .register-form {
+    flex: 1;
+    width: 59%;
+    margin: 0 auto;
+  }
+  .name {
+    width: auto;
+    flex-direction: row;
+  }
+  .name input {
+    width: auto;
+  }
+}

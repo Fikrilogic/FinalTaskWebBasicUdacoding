@@ -1,0 +1,160 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  line-height: 1.6em;
+  font-family: "Teko", sans-serif;
+}
+
+.page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/res/zoo-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  position: absolute;
+  width: 90%;
+  height: 550px;
+  background-color: #fff;
+  left: 60px;
+  top: 60px;
+  border-radius: 10%;
+}
+
+.nav-logo {
+  margin-left: 50px;
+  margin-top: 30px;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 50px;
+}
+.nav-logo a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+
+.nav-logo h1 {
+  font-size: 35px;
+  color: #32ba01;
+}
+.nav-logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.login-container {
+  width: 100%;
+  height: auto;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.login-desc {
+  flex: 1 50%;
+  margin-right: 10px;
+  padding-top: 30px;
+}
+
+.login-desc h1 {
+  font-size: 40px;
+  text-align: justify;
+  margin-left: 15%;
+  margin-bottom: 30px;
+}
+
+.login-desc p {
+  margin-left: 15%;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.login-form {
+  width: 50%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  background-color: #a0e866;
+  padding: 20px 15px;
+  border: none;
+  border-radius: 10px;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form form input {
+  margin-bottom: 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 30px;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+.login-form form p {
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.login-form form p a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.login-form button {
+  width: 80%;
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: lightblue;
+}
+
+/* responsive layout */
+
+@media only screen and (max-width: 750px) {
+  .container {
+    height: auto;
+    margin: 0 auto;
+  }
+  .login-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .login-desc {
+    flex: 1;
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 50px;
+  }
+
+  .login-form {
+    flex: 1;
+    width: 59%;
+    margin: 0 auto;
+  }
+}
