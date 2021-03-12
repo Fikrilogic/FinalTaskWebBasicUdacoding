@@ -48,7 +48,7 @@
                 echo "sangat memuaskan";
             } elseif ($check > 90 && $check <= 100) {
                 echo "terpuji";
-            } elseif ($check <= 60) {
+            } elseif ($check <= 60 & $check > 0) {
                 echo "tidak lulus";
             } else {
                 echo "nilai tidak valid";
