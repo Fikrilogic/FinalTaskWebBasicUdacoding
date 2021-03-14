@@ -99,10 +99,10 @@ section {
   top: 57%;
   width: 100%;
   height: 300px;
-  background-color: rgba(135, 232, 90, 0.3);
+  background-color: rgba(246, 246, 246, 0.3);
 }
 .content-list ul {
-  margin-top: 50px;
+  margin-top: 20px;
   width: 100%;
   height: auto;
   display: flex;
@@ -112,7 +112,13 @@ section {
 }
 .content-list ul li {
   flex: 1 25%;
+  height: 250px;
   text-align: center;
+  background-color: rgba(135, 232, 90, 0.7);
+  border-radius: 5px;
+  margin: 5px;
+  padding: 15px;
+  font-size: 14px;
 }
 /*content style*/
 

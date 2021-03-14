@@ -1,7 +1,7 @@
 <?php
 $site_key = '6LfmenwaAAAAAJXpsINfG7pm2pPWrnSO9nlN_x-B'; // Diisi dengan site_key API Google reCapthca yang sobat miliki
 $secret_key = '6LfmenwaAAAAAD7FnIiEY3_Grt7zzHYzRQWEPzHa'; // Diisi dengan secret_key API Google reCapthca yang sobat miliki
-$captchaErr = "";
+
 if (isset($_POST['submit'])) {
     if (isset($_POST['g-recaptcha-response'])) {
         $api_url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . $secret_key . '&response=' . $_POST['g-recaptcha-response'];
