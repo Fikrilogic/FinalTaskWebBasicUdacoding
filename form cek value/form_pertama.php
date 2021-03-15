@@ -1,3 +1,23 @@
+<?php
+$result = "";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if ($_POST["number"] > 60 && $_POST["number"] <= 80) {
+        $result = "memuaskan";
+    } elseif ($_POST["number"] > 80 && $_POST["number"] <= 90) {
+        $result = "sangat memuaskan";
+    } elseif ($_POST["number"] > 90 && $_POST["number"] <= 100) {
+        $result = "terpuji";
+    } elseif ($_POST["number"] <= 60) {
+        $result = "tidak lulus";
+    } else {
+        $result =  "nilai tidak valid";
+    }
+}
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,30 +53,11 @@
 <body>
 
     <div class="form">
-        <form method="get">
+        <form method="post" action="<?php $_SERVER["PHP_SELF"] ?>">
             <input type="number" name="number" placeholder="input angka mu!">
             <input type="submit">
-
+            <div><?php echo $result ?></div>
         </form>
-        <?php
-
-        function checknumber($check)
-        {
-            if ($check > 60 && $check <= 80) {
-                echo "memuaskan";
-            } elseif ($check > 80 && $check <= 90) {
-                echo "sangat memuaskan";
-            } elseif ($check > 90 && $check <= 100) {
-                echo "terpuji";
-            } elseif ($check <= 60 & $check > 0) {
-                echo "tidak lulus";
-            } else {
-                echo "nilai tidak valid";
-            }
-        }
-
-        echo checknumber($_GET["number"]);
-        ?>
     </div>
 
 </body>
